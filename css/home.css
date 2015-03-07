@@ -1,0 +1,482 @@
+
+#home{
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+section.section{
+  position: relative;
+  z-index: 1;
+}
+/*====================
+        about
+====================*/
+section.section.section--about{
+  z-index: 10;
+}
+section.section{
+  background-size: cover;
+  background-position: center;
+  background-color: whitesmoke;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+section.section .logo{
+  position: relative;
+  z-index: 5;
+  font-weight: bold;
+  font-family: monospace;
+  color: #444;
+  font-size: 140px;
+  line-height: 120px;
+}
+
+section.section.section--about .logo .dot{
+  -moz-animation: dotAnime 20s ease 0s infinite alternate;
+  -webkit-animation: dotAnime 20s ease 0s infinite alternate;
+  -o-animation: dotAnime 20s ease 0s infinite alternate;
+  -ms-animation: dotAnime 20s ease 0s infinite alternate;
+}
+
+section.section.section--about .title {
+  display: inline-block;
+  vertical-align: middle
+}
+section.section.section--about .theme {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 9px;
+  color: #555;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+section.section.section--about .comment{
+  display: inline-block;
+  vertical-align: bottom;
+}
+section.section--about .content{
+  margin-top: 24px;
+}
+section.section .content{
+  border-radius: 4px;
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 5;
+  font-weight: bold;
+  color: #444;
+}
+section.section .content p{
+  text-shadow: 0px 0px 10px whitesmoke;
+}
+section.section .content p a{
+  text-shadow: none;
+}
+section.section.section--about  .comment {
+    position: relative;
+    display:inline-block;
+    border: solid 6px #454545;
+    padding:16px ;
+    text-align:left;
+    background-color:#f5f5f5;
+    margin: 5px 5px 5px 16px;
+    border-radius: 5px ;
+}
+
+section.section.section--about  .comment h1, section.section.section--about .content h1{
+  margin: 0;
+  border-left: solid 8px;
+  padding-left: 8px;
+  font-weight: bold;
+  color: #444;
+  font-size: 24px;
+}
+section.section.section--about .content h1{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+section.section.section--about  .comment p{
+  margin-top: 10px
+}
+section.section.section--about  .comment:after, .comment:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+section.section.section--about  .comment:after {
+    bottom: 8px;
+    left: -20px;
+    border: 10px solid transparent;
+    border-right: 15px solid #f5f5f5; /*13px*/
+    z-index: 2;
+}
+section.section.section--about .comment:before {
+    bottom: 8px;
+    left: -27px;
+    border: 10px solid transparent;
+    border-right: 13px solid #444; /*10px*/
+    z-index: 1;
+}
+/*====================
+        diamond
+====================*/
+.diamond{
+  position: absolute;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+.diamond--pink{
+  left: -5%;
+  top: -20%;
+  width: 255px;
+  height: 255px;
+  border: double 6px;
+  border-color: rgb(230, 0, 108);
+}
+.diamond--yellow{
+  border: double 6px;
+  border-color: rgb(231, 226, 0);
+  left: 82%;
+  width: 800px;
+  height: 800px;
+  bottom: 50%;
+}
+.diamond--blue{
+  border: double 6px;
+  border-color: rgb(0, 160, 197);
+  top: 90%;
+  width: 480px;
+  height: 480px;
+  right: 18%;
+}
+
+.diamond--green{
+  width: 300px;
+  height: 300px;
+  border: double 6px;
+  border-color: rgb(0, 180, 0);
+  bottom: -40%;
+  left: 10%;
+}
+/*====================
+        square
+====================*/
+.square{
+  position: absolute;
+}
+.square--pink{
+  left: -5%;
+  top: -20%;
+  width: 255px;
+  height: 255px;
+  border: double 6px;
+  border-color: rgb(230, 0, 108);
+}
+.square--yellow{
+  border: double 6px;
+  border-color: rgb(231, 226, 0);
+  left: 82%;
+  width: 800px;
+  height: 800px;
+  bottom: 50%;
+}
+.square--blue{
+  border: double 6px;
+  border-color: rgb(0, 160, 197);
+  top: 90%;
+  width: 480px;
+  height: 480px;
+  right: 18%;
+}
+
+.square--green{
+  width: 300px;
+  height: 300px;
+  border: double 6px;
+  border-color: rgb(0, 180, 0);
+  bottom: -40%;
+  left: 10%;
+}
+/*====================
+        circle
+====================*/
+.circle{
+  position: absolute;
+  border-radius: 50%;
+}
+.circle--pink{
+  left: -5%;
+  top: -20%;
+  width: 255px;
+  height: 255px;
+  border: double 6px;
+  border-color: rgb(230, 0, 108);
+}
+.circle--yellow{
+  border: double 6px;
+  border-color: rgb(231, 226, 0);
+  left: 82%;
+  width: 800px;
+  height: 800px;
+  bottom: 50%;
+}
+.circle--blue{
+  border: double 6px;
+  border-color: rgb(0, 160, 197);
+  top: 90%;
+  width: 480px;
+  height: 480px;
+  right: 18%;
+}
+
+.circle--green{
+  width: 300px;
+  height: 300px;
+  border: double 6px;
+  border-color: rgb(0, 180, 0);
+  bottom: -40%;
+  left: 10%;
+}
+/*====================
+        ribon
+====================*/
+.ribon__wrapper{
+  right: 0;
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  overflow: hidden;
+  top: inherit;
+  bottom: 0;
+  z-index: 40;
+  pointer-events: none;
+}
+
+.ribon__content{
+  display: block;
+  top: 80px;
+  right: -43px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1D7CD8),color-stop(100%, #1D9FD8));
+  background-image: -moz-linear-gradient(top, #1D7CD8,#1D9FD8);
+  background-image: -webkit-linear-gradient(top, #1D7CD8,#1D9FD8);
+  background-image: linear-gradient(to bottom, #1D7CD8,#1D9FD8);
+  position: absolute;
+  padding: 2px 0;
+  font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 999;
+  pointer-events: auto;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -moz-box-shadow: rgba(0,0,0,0.5) 0 2px 3px 0;
+  -webkit-box-shadow: rgba(0,0,0,0.5) 0 2px 3px 0;
+  box-shadow: rgba(0,0,0,0.5) 0 2px 3px 0;
+}
+
+.ribon__content span{
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 200px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 2px 0;
+  border-width: 1px 0;
+  border-style: dotted;
+  border-color: #fff;
+  border-color: rgba(255,255,255,0.7);
+}
+
+/*====================
+        wraparound
+====================*/
+.wraparound{
+  z-index: 20;
+  position: relative;
+  background-color: rgb(52, 52, 90);
+  height: 120px;
+  color: whitesmoke;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgb(69, 69, 119)),color-stop(100%, rgb(50, 50, 94)));
+  background-image: -moz-linear-gradient(top, rgb(69, 69, 119),rgb(50, 50, 94));
+  background-image: -webkit-linear-gradient(top, rgb(69, 69, 119),rgb(50, 50, 94));
+  background-image: linear-gradient(to bottom, rgb(69, 69, 119),rgb(50, 50, 94));
+}
+.wraparound .pointer {
+  height: 100px !important;
+  width: 100% !important;
+  -moz-animation: ribonAnime 20s ease 0s infinite alternate;
+  -webkit-animation: ribonAnime 20s ease 0s infinite alternate;
+  -o-animation: ribonAnime 20s ease 0s infinite alternate;
+  -ms-animation: ribonAnime 20s ease 0s infinite alternate;
+  border: dotted  orange;
+  border-width: 2px 0px;
+}
+.wraparound div div{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  white-space: normal !important;
+}
+
+
+/*====================
+        group
+====================*/
+section.section.section--group{
+  z-index: 9;
+}
+section.section.section--group .logo{
+  text-align: center;
+}
+section.section.section--group .logo .dot{
+  -moz-animation: dotAnime 20s ease 0s infinite alternate;
+  -webkit-animation: dotAnime 20s ease 0s infinite alternate;
+  -o-animation: dotAnime 20s ease 0s infinite alternate;
+  -ms-animation: dotAnime 20s ease 0s infinite alternate;
+}
+
+/*====================
+        event
+====================*/
+section.section.section--achivement{
+  z-index: 8;
+}
+section.section.section--event .logo .dot{
+  -moz-animation: dotAnime 20s ease 0s infinite alternate;
+  -webkit-animation: dotAnime 20s ease 0s infinite alternate;
+  -o-animation: dotAnime 20s ease 0s infinite alternate;
+  -ms-animation: dotAnime 20s ease 0s infinite alternate;
+}
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
+@media (max-width: 1200px){
+  section.section .logo{
+    font-size: 120px;
+    line-height: 88px;
+  }
+}
+@media (max-width: 992px){
+  section.section .logo{
+    font-size: 96px;
+    line-height: 88px;
+    text-align: center;
+  }
+   section.section.section--about .theme{
+    letter-spacing: 2px;
+  }
+  section.section.section--about .comment{
+    width: 45%;
+  }
+}
+@media (max-width: 768px){
+  section.section.section .title {
+    width: 100%;
+    text-align: center;
+  }
+  section.section .logo{
+    font-size: 72px;
+    line-height: 88px;
+  }
+  section.section.section--about .theme{
+    padding: 0;
+    font-size: 12px;
+  }
+  section.section.section--about  .comment:after ,  section.section.section--about  .comment:before {
+    display: none;
+  }
+  section.section.section--about .comment{
+    margin: 0;
+    width: 100%;
+    border: solid 3px #454545;
+  }
+  section.section .content{
+    margin: 4px;
+    font-size: 12px;
+  }
+}
+/*--------------------------*/
+@-moz-keyframes ribonAnime {
+0% {border-color: rgb(184, 14, 14);}
+20% {border-color: rgb(184, 14, 184);}
+40% {border-color: rgb(14, 14, 184);}
+60% {border-color: rgb(14, 184, 184);}
+80% {border-color: rgb(14, 184, 14);}
+100% {border-color: rgb(184, 184, 14);}
+}
+
+@-webkit-keyframes ribonAnime {
+0% {border-color: rgb(184, 14, 14);}
+20% {border-color: rgb(184, 14, 184);}
+40% {border-color: rgb(14, 14, 184);}
+60% {border-color: rgb(14, 184, 184);}
+80% {border-color: rgb(14, 184, 14);}
+100% {border-color: rgb(184, 184, 14);}
+}
+
+@-o-keyframes ribonAnime {
+0% {border-color: rgb(184, 14, 14);}
+20% {border-color: rgb(184, 14, 184);}
+40% {border-color: rgb(14, 14, 184);}
+60% {border-color: rgb(14, 184, 184);}
+80% {border-color: rgb(14, 184, 14);}
+100% {border-color: rgb(184, 184, 14);}
+}
+
+@-ms-keyframes ribonAnime {
+0% {border-color: rgb(184, 14, 14);}
+20% {border-color: rgb(184, 14, 184);}
+40% {border-color: rgb(14, 14, 184);}
+60% {border-color: rgb(14, 184, 184);}
+80% {border-color: rgb(14, 184, 14);}
+100% {border-color: rgb(184, 184, 14);}
+}
+/*--------------------------*/
+@-moz-keyframes dotAnime {
+0% {color: rgb(0, 160, 197);}
+25% {color: rgb(0, 180, 0);}
+50% {color: rgb(252, 174, 32);}
+75% {color: rgb(231, 226, 0);}
+100% {color: rgb(230, 0, 108);}
+}
+
+@-webkit-keyframes dotAnime {
+0% {color: rgb(0, 160, 197);}
+25% {color: rgb(0, 180, 0);}
+50% {color: rgb(252, 174, 32);}
+75% {color: rgb(231, 226, 0);}
+100% {color: rgb(230, 0, 108);}
+}
+
+@-o-keyframes dotAnime {
+0% {color: rgb(0, 160, 197);}
+25% {color: rgb(0, 180, 0);}
+50% {color: rgb(252, 174, 32);}
+75% {color: rgb(231, 226, 0);}
+100% {color: rgb(230, 0, 108);}
+}
+
+@-ms-keyframes dotAnime {
+0% {color: rgb(0, 160, 197);}
+25% {color: rgb(0, 180, 0);}
+50% {color: rgb(252, 174, 32);}
+75% {color: rgb(231, 226, 0);}
+100% {color: rgb(230, 0, 108);}
+}
+/*--------------------------*/

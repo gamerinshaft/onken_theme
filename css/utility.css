@@ -1,0 +1,26 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+.main {
+  width: 100%;
+  height: 100%; }
+
+.table{
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+.table-cell {
+  display: table-cell;
+  margin: 0 auto;
+  vertical-align: middle; }
+
+.smoke{
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
