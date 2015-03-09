@@ -11,6 +11,7 @@ Template Name: home
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/animation.css">
   </head>
   <body>
+    <?php get_header(); ?>
     <div class="table">
       <div class="table-cell">
         <div class="text-center">
