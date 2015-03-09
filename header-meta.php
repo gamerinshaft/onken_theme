@@ -1,4 +1,4 @@
-  <title>unitus</title>
+  <title>音楽研究会</title>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta content="ja" http-equiv="Content-Language">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
