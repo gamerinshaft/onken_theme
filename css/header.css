@@ -1,0 +1,15 @@
+/* header */
+header.navbar-default{
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  border: none;
+  z-index: 99;
+}
+header.navbar-default .navbar-brand, .navbar-default .navbar-nav li a{
+  color: whitesmoke;
+}
+  margin: 2px 0;
+}

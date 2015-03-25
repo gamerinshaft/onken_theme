@@ -41,10 +41,6 @@ cite.fn:before{
   margin: 5px 0px;
 }
 
-#respond p{
-  margin: 2px 0;
-}
-
 #respond #submit{
   background-color: rgb(60,60,60);
   box-shadow: none;
