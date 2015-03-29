@@ -30,17 +30,13 @@ Template Name: home
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/top-header.png">
       </div>
     </div>
-    <div class="table">
-      <div class="table-cell">
-        <div class="text-center">
-          <p>音楽研究会にようこそ。</p>
-          <a href="<?php bloginfo('url'); ?>/member">
-            <div class="btn btn-primary">
-              部員用ページへ
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+    <?php
+      $image_id = get_post_thumbnail_id();
+      $image_url = wp_get_attachment_image_src($image_id, true);
+      $image_url[0] = empty($image_url[0])?get_bloginfo('stylesheet_directory') . '/img/programming_back.jpg':$image_url[0];
+    ?>
+    <?php the_post() ?>
+    <!-- <?php the_title(); ?> -->
+    <?php the_content(); ?>
   </body>
 </html>
