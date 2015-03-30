@@ -38,25 +38,25 @@ Template Name: home
     <div class="main">
       <div class="items">
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-12">
             <div class="item">
               <i class="fa fa-question-circle"></i>
               <p>アバウト</p>
             </div>
           </div>
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-12">
             <div class="item">
               <i class="fa fa-bell-o"></i>
               <p>新入生へ</p>
             </div>
           </div>
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-12">
             <div class="item">
               <i class="fa fa-desktop"></i>
               <p>実装した機能</p>
             </div>
           </div>
-          <div class="col-xs-3">
+          <div class="col-sm-3 col-xs-12">
             <div class="item">
               <i class="fa fa-send"></i>
               <p>コンタクト</p>

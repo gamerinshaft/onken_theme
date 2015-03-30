@@ -119,12 +119,12 @@
 #home .main{
 
 }
-#home .main .items .col-xs-3:nth-of-type(odd){
+#home .main .items .col-sm-3:nth-of-type(odd){
   background-color: rgb(68,68,68);
   color: rgb(145,145,145);
   text-align: center;
 }
-#home .main .items .col-xs-3:nth-of-type(even){
+#home .main .items .col-sm-3:nth-of-type(even){
   background-color: rgb(49,49,49);
   color: rgb(145,145,145);
   text-align: center;
