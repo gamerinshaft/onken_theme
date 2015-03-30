@@ -21,6 +21,7 @@
 #home{
   /*background-image: url("../img/bg.gif");*/
   background-color: black;
+  overflow-x: hidden;
 }
 
 #home .home__top .top__image{
@@ -114,9 +115,112 @@
   width: 100%;
   height: 4px;
 }
+/*main*/
+#home .main{
 
-.whatsnew{
-  background-color: rgb(32,32,32);
+}
+#home .main .items .col-xs-3:nth-of-type(odd){
+  background-color: rgb(68,68,68);
+  color: rgb(145,145,145);
+  text-align: center;
+}
+#home .main .items .col-xs-3:nth-of-type(even){
+  background-color: rgb(49,49,49);
+  color: rgb(145,145,145);
+  text-align: center;
+}
+#home .main .items .item{
+  padding: 12px;
+}
+#home .main .items .item i{
+  font-size: 45px;
+  -webkit-font-smoothing: antialiased;
+  padding: 12px;
+}
+#home .main .items .item p{
+  margin-bottom: 0px;
+}
+/* home footer*/
+#home footer.info{
+  background-color: #222;
+}
+
+#home footer.info .info-icon{
+  display: inline-block;
+}
+
+#home footer.info .info-icon i{
+  color: #555;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  font-size: 50px;
+  border: double 10px #555;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+#home footer.info .info-title{
+  color: #555;
+  padding-top: 8px;
+}
+#home footer .whatsnew{
+  position: relative;
+}
+#home footer .whatsnew .wn-head{
+  background-color: transparent !important;
+}
+#home footer .whatsnew .wn-head .wn-postlist{
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  bottom: -20px;
+}
+#home footer .whatsnew .wn-head .wn-postlist a{
+  color: #666;
+}
+#home footer .whatsnew .wn-head .wn-title{
+  display: none;
+}
+
+#home footer .whatsnew .wn-date{
+  color: rgb(200, 200, 200);
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  letter-spacing: 4px;
+  width: 40%;
+}
+#home footer .whatsnew .wn-article{
+  display: inline-block;
+  position: relative;
+  width: 59%;
+}
+@media screen and (max-width: 768px){
+  #home footer .whatsnew .wn-date{
+    width: 100%;
+  }
+  #home footer .whatsnew .wn-article{
+    width: 100%;
+  }
+}
+#home footer .whatsnew .wn-article a{
+  color: rgb(145, 145, 145);
+  -webkit-font-smoothing: antialiased;
+}
+#home footer .whatsnew .wn-article .newmark{
+  color: rgba(255, 140, 0, 0.78);
+  position: absolute;
+  right: 100%;
+  padding-right: 10px;
+}
+#home footer .whatsnew .wn-item{
+  padding-bottom: 6px;
+}
+#home footer .table{
+  height: 300px;
+}
+#home footer .left-art .table .table-cell{
+  text-align: center;
 }
 
 /*-----------------blockquote-------------------*/
