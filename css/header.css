@@ -10,6 +10,19 @@ header.navbar-default{
 }
 header.navbar-default .navbar-brand, .navbar-default .navbar-nav li a{
   color: whitesmoke;
-}
   margin: 2px 0;
+  -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+      transition: color .2s ease-in-out;
+}
+header.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav li a:hover, header.navbar-default .navbar-brand:focus, .navbar-default .navbar-nav li a:focus{
+  color: rgb(159, 43, 83) !important;
+}
+
+header.navbar-default .navbar-toggle .icon-bar{
+  background-color: #ddd;
+}
+
+header.navbar-default .navbar-toggle:focus, header.navbar-default .navbar-toggle:hover{
+  background-color: transparent;
 }

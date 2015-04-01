@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">音楽研究会</a>
+      <a class="navbar-brand" href="<?php bloginfo('url'); ?>">音楽研究会</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

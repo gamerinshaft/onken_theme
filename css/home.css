@@ -66,6 +66,11 @@
   font-size: 150px;
   font-family: cursive;
 }
+@media screen and (max-width: 768px){
+  #home .home__top .top__word h1{
+    font-size: 110px;
+  }
+}
 
 #home .home__top .top__word h2{
   font-family: serif;
@@ -117,13 +122,23 @@
 }
 /*main*/
 #home .main{
-
+  height: auto;
+}
+#home .main .items a{
+  color: inherit;
+  text-decoration: none;
+}
+#home .main .items .row{
+  margin-right: 0;
+  margin-left: 0;
 }
 #home .main .items .item-wrap{
   -webkit-transition: color .2s ease-in-out;
     -o-transition: color .2s ease-in-out;
       transition: color .2s ease-in-out;
   position: relative;
+  text-align: center;
+  cursor: pointer;
 }
 #home .main .items .item-wrap:after{
   z-index: 80;
@@ -148,6 +163,11 @@
 #home .main .items .item-wrap:hover:after {
   display: block;
 }
+@media screen and (max-width: 768px){
+  #home .main .items .item-wrap:hover:after {
+    display: none;
+  }
+}
 
 #home .main .items .item-wrap:hover{
   color: rgba(255, 140, 0, 0.78) !important;
@@ -155,8 +175,6 @@
 #home .main .items .item-wrap:nth-of-type(odd){
   background-color: rgb(68,68,68);
   color: rgb(145,145,145);
-  text-align: center;
-  cursor: pointer;
 }
 #home .main .items .item-wrap:nth-of-type(odd):after{
   border-top-color: rgb(68,68,68);
@@ -167,8 +185,6 @@
 #home .main .items .item-wrap:nth-of-type(even){
   background-color: rgb(49,49,49);
   color: rgb(145,145,145);
-  text-align: center;
-  cursor: pointer;
 }
 #home .main .items .item{
   padding: 12px;
@@ -232,10 +248,15 @@
   letter-spacing: 4px;
   width: 40%;
 }
+@media screen and (max-width: 768px){
+  #home footer .whatsnew .wn-date{
+    letter-spacing: 1px;
+  }
+}
 #home footer .whatsnew .wn-article{
   display: inline-block;
-  position: relative;
   width: 59%;
+  position: relative;
 }
 @media screen and (max-width: 768px){
   #home footer .whatsnew .wn-date{
@@ -310,7 +331,7 @@
 
 #home blockquote:nth-of-type(odd):after{
 
-  background-image: url("../img/back_test.png");
+  background-image: url("../img/back0.png");
 }
 #home blockquote:nth-of-type(even):after{
 

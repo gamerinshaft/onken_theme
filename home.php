@@ -45,16 +45,20 @@ Template Name: home
             </div>
           </div>
           <div class="col-sm-3 col-xs-12 item-wrap">
-            <div class="item">
-              <i class="fa fa-bell-o"></i>
-              <p>新入生へ</p>
-            </div>
+            <a href="<?php bloginfo('url'); ?>/freshman">
+              <div class="item">
+                <i class="fa fa-bullhorn"></i>
+                <p>新入生の方へ</p>
+              </div>
+            </a>
           </div>
           <div class="col-sm-3 col-xs-12 item-wrap">
-            <div class="item">
-              <i class="fa fa-desktop"></i>
-              <p>実装した機能</p>
-            </div>
+            <a href="<?php bloginfo('url'); ?>/position">
+              <div class="item">
+                <i class="fa fa-sitemap"></i>
+                <p>役職紹介</p>
+              </div>
+            </a>
           </div>
           <div class="col-sm-3 col-xs-12 item-wrap">
             <div class="item">
@@ -84,7 +88,6 @@ Template Name: home
             <div class="table">
               <div class="table-cell">
                 <?php the_post() ?>
-                <!-- <?php the_title(); ?> -->
                 <?php the_content(); ?>
               </div>
             </div>

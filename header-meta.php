@@ -3,7 +3,7 @@
   <meta content="ja" http-equiv="Content-Language">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/animation.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/setting.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/utility.css">
