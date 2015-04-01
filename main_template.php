@@ -28,15 +28,21 @@ Template Name: MainTemplate
         <div class="main__title">
           <?php the_title(); ?>
         </div>
+        <nav class="navbar">
+          <ul class="nav navbar-nav">
+            <li <?php if($pagename == "freshman"){echo 'class="active"';}?>>
+              <a href="<?php bloginfo('url'); ?>/freshman">
+                新入生の方へ
+              </a>
+            </li>
+            <li <?php if($pagename == "position"){echo 'class="active"';}?>>
+              <a href="<?php bloginfo('url'); ?>/position">
+                役職紹介
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul class="sub-navigation">
-
-        <li>
-          <a href="<?php bloginfo('url'); ?>/freshman">
-          新入生の方へ
-          </a>
-        </li>
-      </ul>
     </div>
 
     <div class="col-md-4 sidebar-wrap">
@@ -60,7 +66,7 @@ Template Name: MainTemplate
                   echo '<a href="' . get_permalink() . '"><div class="col-xs-12 item-wrap"><div class="item">';
                     echo '<div class="item__title">' . get_the_title() . '</div>';
                     ?>
-                    <div class="item__image" style='background-image: url("<?php echo $image_url[0]; ?> ");'></div>
+                    <div class="item__image" style='background-image: url("<?php echo $sub_image_url[0]; ?> ");'></div>
                     <?
                     echo '<div class="item__content">' . mb_substr(get_the_excerpt(),0,50) . '</div>';
                   echo '</div></div></a>';

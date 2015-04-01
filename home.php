@@ -6,7 +6,7 @@ Template Name: home
 <?php
   $image_id = get_post_thumbnail_id();
   $image_url = wp_get_attachment_image_src($image_id, true);
-  $image_url[0] = empty($image_url[0])?get_bloginfo('stylesheet_directory') . '/img/programming_back.jpg':$image_url[0];
+  $image_url[0] = empty($image_url[0])?get_bloginfo('stylesheet_directory') . '/img/bg-image.jpg':$image_url[0];
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -18,15 +18,15 @@ Template Name: home
   <body id="home">
     <?php get_header(); ?>
     <div class="home__top">
-      <div class="top__image">
+      <div class="top__image" style='background-image: url("<?php echo $image_url[0]; ?> ");'>
       </div>
       <div class="table">
         <div class="table-cell">
           <div class="container">
             <div class="top__word">
-              <h1>6</h1>
+              <h1><?php echo get_post_meta($post->ID, "代", true); ?></h1>
               <h2>東京理科大学<br>音楽研究会</h2>
-              <p>東京理科大学野田キャンパスで活動している音楽サークルです。初心者から玄人まで、サークル選びに迷った人たちがこぞって入る最大手の音楽サークルとなっています。今年から念願の部室も獲得でき、歴史は浅いですが勢いのあるサークルです。学生生活という限りある時間を、僕らと一緒に過ごしませんか？</p>
+              <p><?php echo get_post_meta($post->ID, "謳い文句", true); ?></p>
             </div>
           </div>
         </div>

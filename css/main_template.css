@@ -21,7 +21,16 @@
 }
 #main_template .header .main__title{
   font-size: 24px;
+  padding-left: 20px;
+  border-left: solid 4px rgb(179, 20, 86);
   -webkit-font-smoothing: antialiased;
+}
+
+#main_template nav.navbar ul li a{
+  color: #555;
+}
+#main_template nav.navbar ul li.active a{
+  color: rgb(179, 20, 86);
 }
 
 #main_template .sidebar{
@@ -112,6 +121,13 @@
 }
 #main_template .item-wrap .item__content{
   padding-top: 16px;
+  position: relative;
+  margin-right: 300px;
+}
+@media screen and (max-width: 768px){
+  #main_template .item-wrap .item__content{
+    margin-right: 0px;
+  }
 }
 #main_template .item-wrap:hover .item__title{
   color: rgba(255, 140, 0, 0.78) !important;
