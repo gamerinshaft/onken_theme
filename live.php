@@ -4,6 +4,11 @@ Template Name: live
 */
 ?>
 <?php
+  if (!is_user_logged_in()) {
+    auth_redirect();
+  }
+?>
+<?php
   $live_content = "";
   $categories = get_categories();
   foreach($categories as $category) :
