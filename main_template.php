@@ -11,6 +11,9 @@ Template Name: MainTemplate
   if($post->post_title == "新入生の方へ"){
     $pagename = "freshman";
   }elseif($post->post_title == "役職紹介"){
+    $pagename = "position";
+  }elseif($post->post_title == "メディア"){
+    $pagename = "media";
   }else{
     $pagename = "error";
   }
@@ -30,6 +33,11 @@ Template Name: MainTemplate
         </div>
         <nav class="navbar">
           <ul class="nav navbar-nav">
+            <li <?php if($pagename == "media"){echo 'class="active"';}?>>
+              <a href="<?php bloginfo('url'); ?>/media">
+                メディア
+              </a>
+            </li>
             <li <?php if($pagename == "freshman"){echo 'class="active"';}?>>
               <a href="<?php bloginfo('url'); ?>/freshman">
                 新入生の方へ
@@ -68,7 +76,7 @@ Template Name: MainTemplate
                     ?>
                     <div class="item__image" style='background-image: url("<?php echo $sub_image_url[0]; ?> ");'></div>
                     <?
-                    echo '<div class="item__content">' . mb_substr(get_the_excerpt(),0,50) . '</div>';
+                    echo '<div class="item__content">' . mb_substr(get_the_excerpt(),0,250) . '</div>';
                   echo '</div></div></a>';
                 endwhile;
               wp_reset_query();

@@ -39,10 +39,12 @@ Template Name: home
       <div class="items">
         <div class="row">
           <div class="col-sm-3 col-xs-12 item-wrap">
-            <div class="item">
-              <i class="fa fa-question-circle"></i>
-              <p>アバウト</p>
-            </div>
+            <a href="<?php bloginfo('url'); ?>/media">
+              <div class="item">
+                <i class="fa fa-desktop"></i>
+                <p>メディア</p>
+              </div>
+            </a>
           </div>
           <div class="col-sm-3 col-xs-12 item-wrap">
             <a href="<?php bloginfo('url'); ?>/freshman">
@@ -61,10 +63,12 @@ Template Name: home
             </a>
           </div>
           <div class="col-sm-3 col-xs-12 item-wrap">
-            <div class="item">
-              <i class="fa fa-send"></i>
-              <p>コンタクト</p>
-            </div>
+            <a href="" data-toggle="modal" data-target=".contact_form">
+              <div class="item">
+                <i class="fa fa-send"></i>
+                <p>コンタクト</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
