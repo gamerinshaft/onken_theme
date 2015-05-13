@@ -18,8 +18,8 @@ Template Name: onken_member
     <div class="table">
       <div class="table-cell">
         <div class="text-center">
-          <p>部員用ページです</p>
-          <a href="<?php bloginfo('url'); ?>/live">live映像一覧</a>
+          <?php the_post() ?>
+          <?php the_content() ?>
           </div>
         </div>
       </div>
