@@ -24,7 +24,7 @@
           </ul>
         </li> -->
         <li><a href="" data-toggle="modal" data-target=".contact_form">コンタクト</a></li>
-        <li><a href="<?php bloginfo('url'); ?>/member">部員用ページ</a></li>
+        <li><a href="<?php bloginfo('url'); ?>/admin">部員用ページ</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -1,0 +1,213 @@
+header#admin{
+  height: 60px;
+  background-color: #455A64;
+  border-bottom: solid 4px #37474F;
+}
+
+header#admin .wrap{
+  position: relative;
+  height: 100%;
+}
+
+header#admin .user-status{
+  position: absolute;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  opacity: 0.6;
+  left: 16px;
+  bottom: 5px;
+}
+header#admin .user-status .user-name{
+  letter-spacing: 2.3px;
+  display: inline-block;
+}
+header#admin .user-status .user-level{
+  display: inline-block;
+  font-size: 12px;
+  text-indent: 8px;
+}
+header#admin .user-status .user-mail{
+  font-size: 12px;
+}
+header#admin .avatar-wrap{
+  padding: 4px;
+  background-color: #37474F;
+  display: inline-block;
+  border: solid 1px #263238;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+header#admin .avatar-wrap img{
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background-color: whitesmoke;
+}
+.admin-content{
+  padding-top: 60px;
+}
+
+/*=================*/
+
+.admin-content article{
+  -webkit-font-smoothing: antialiased;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 16px;
+  color: whitesmoke;
+  overflow: hidden;
+}
+article:after {
+  z-index: 0;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 200px 200px 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+/*---------------*/
+article:after{
+  z-index: 0;
+}
+article > * {
+  z-index: 5;
+  position: relative;
+}
+
+article.live{
+  background-color: #0288D1;
+}
+article.live:after{
+  border-color: transparent #0277BD transparent transparent;
+}
+article.clubroom{
+  background-color: #FFA000;
+}
+article.clubroom:after{
+  border-color: transparent #FF8F00 transparent transparent;
+}
+article.howto{
+  background-color: #388E3C;
+}
+article.howto:after{
+  border-color: transparent #2E7D32 transparent transparent;
+}
+article.proceedings{
+  background-color: #7B1FA2;
+}
+article.proceedings:after{
+  border-color: transparent #6A1B9A transparent transparent;
+}
+article.room{
+  background-color: white;
+}
+article.room:after{
+  z-index: 5;
+  border-width: 0 60px 60px 0;
+  border-color: transparent #AD1457 transparent transparent;
+}
+article .title-wrap{
+  display: block;
+  width: 100%;
+  top: 0px;
+}
+article.settings .title-wrap{
+  background-color: #00796B
+}
+article.settings:after{
+  z-index: 5;
+  border-width: 0 60px 60px 0;
+  border-color: transparent #00695C transparent transparent;
+}
+article.room .title-wrap{
+  background-color: #C2185B;
+}
+.admin-content article.room i{
+  background-color: rgba(173, 20, 87, 0.69);
+  border: solid 3px #AD1457;
+}
+.admin-content article.settings i{
+  border: solid 3px #00695C;
+  background-color: rgba(0, 105, 92, 0.69);
+}
+/*---------------*/
+
+.admin-content article.room .schedule > ul{
+  list-style: none;
+  color: #555;
+  font-size: 16px;
+  padding: 8px 24px;
+}
+.admin-content article.room .schedule > ul li strong{
+  display: inline-block;
+  width: 100%;
+  margin-top: 8px;
+}
+.admin-content article.room .schedule > ul li strong:after{
+  content: "";
+  display: block;
+  border-top: solid 1px #C5C5C5;
+  border-bottom: solid 1px #EAEAEA;
+}
+.admin-content article a{
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+.admin-content article .title{
+  border: none;
+  vertical-align: middle;
+  font-size: 24px;
+  line-height: 24px;
+  text-indent: 8px;
+  display: inline-block;
+}
+.admin-content article i{
+  vertical-align: top;
+  position: relative;
+  z-index: 2;
+  font-size: 32px;
+  color: whitesmoke;
+  padding: 9px 0px;
+  text-align: center;
+  line-height: 43px;
+  width: 60px;
+  height: 60px;
+}
+
+/****************************/
+.archive-list{
+  padding-top: 60px;
+}
+.archive-list ul{
+  list-style: none;
+  padding: 0px;
+}
+.archive-list ul li{
+  background-color: white;
+  margin: 8px;
+  padding: 12px;
+  border-left: solid 4px #FFA000;
+}
+.archive-list ul li a{
+  color: #555;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+}
+/****************************/
+
