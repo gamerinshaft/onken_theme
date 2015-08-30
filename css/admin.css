@@ -1,7 +1,11 @@
 header#admin{
   height: 60px;
+  width: 100%;
+  top: 0px;
   background-color: #455A64;
   border-bottom: solid 4px #37474F;
+  position: fixed;
+  z-index: 100;
 }
 
 header#admin .wrap{
@@ -47,12 +51,15 @@ header#admin .avatar-wrap img{
   width: 100%;
   height: 100%;
 }
+.header-blank{
+  padding-top:  96px;
+}
 
 body{
   background-color: whitesmoke;
 }
 .admin-content{
-  padding-top: 60px;
+
 }
 
 /*=================*/
@@ -85,7 +92,22 @@ article > * {
   z-index: 5;
   position: relative;
 }
-
+article.info{
+  background-color: white;
+}
+article.info:after{
+  z-index: 5;
+  border-width: 0 60px 60px 0;
+  border-color: transparent #AD1457 transparent transparent;
+}
+article.info .title-wrap{
+  background-color: #C2185B;
+}
+article.info .content{
+  padding: 8px 24px;
+  font-size: 16px;
+  color: #555;
+}
 article.live{
   background-color: #0288D1;
 }
@@ -97,12 +119,6 @@ article.clubroom{
 }
 article.clubroom:after{
   border-color: transparent #FF8F00 transparent transparent;
-}
-article.howto{
-  background-color: #388E3C;
-}
-article.howto:after{
-  border-color: transparent #2E7D32 transparent transparent;
 }
 article.proceedings{
   background-color: #7B1FA2;
@@ -142,6 +158,23 @@ article.room .title-wrap{
   border: solid 3px #00695C;
   background-color: rgba(0, 105, 92, 0.69);
 }
+.admin-content article.info i{
+  background-color: rgba(173, 20, 87, 0.69);
+  border: solid 3px #AD1457;
+}
+.admin-content article.howto i{
+  border: solid 3px #2E7D32;
+  background-color: rgba(46, 125, 50, 0.69);
+}
+
+article.howto .title-wrap{
+  background-color: #388E3C;
+}
+article.howto:after{
+  z-index: 5;
+  border-width: 0 60px 60px 0;
+  border-color: transparent #2E7D32 transparent transparent;
+}
 /*---------------*/
 
 .admin-content article.room .schedule > ul{
@@ -158,7 +191,7 @@ article.room .title-wrap{
 .admin-content article.room .schedule > ul li strong:after{
   content: "";
   display: block;
-  border-top: solid 1px #C5C5C5;
+  border-top: solid 1px #909090;
   border-bottom: solid 1px #EAEAEA;
 }
 .admin-content article a{

@@ -42,15 +42,16 @@ Template Name: live
 <html lang="ja">
   <head>
     <?php get_header("meta"); ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/admin.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/animation.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/live/live.css">
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/lib/freewall.js"></script>
   </head>
   <body id="live">
     <?php the_post(); ?>
+    <?php get_header("admin"); ?>
     <section class="live-content">
       <div class="container">
-        <h1>ライブ映像一覧</h1>
         <div class="row">
           <div id="live_freewall">
             <?php echo $live_content ?>

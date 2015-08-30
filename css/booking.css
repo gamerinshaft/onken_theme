@@ -1,0 +1,27 @@
+table{
+  width: 90%;
+  margin: 0 auto;
+}
+th.week-title {
+  background-color: #00796B;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  padding: 8px;
+  border-right: 1px solid whitesmoke;
+}
+th.week-title:last-child {
+  border-right: none;
+}
+tr{
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+}
+td.day-box {
+  padding: 8px;
+  background-color: white;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+}
+tr td:last-child{
+  border-right: none;
+}

@@ -11,7 +11,7 @@
 //  echo $user->get('user_firstname')."\n"; // 表示名
 //  echo $user->get('user_lastname')."\n"; // 表示名
 ?>
-<header id="admin">
+<header id="admin" class="frameshadow">
   <div class="wrap container">
     <div class="user-status">
       <div class="user-name">
@@ -43,10 +43,11 @@
         <?php echo $user->get('user_email') ?>
       </div>
     </div>
-    <div class="avatar-wrap">
+    <div class="avatar-wrap frameshadow">
       <a href="<?php bloginfo('url'); ?>/admin">
         <?php echo get_avatar($user->get('ID'), 60)."\n"; ?>
       </a>
     </div>
   </div>
 </header>
+<div class="header-blank"></div>

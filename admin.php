@@ -19,6 +19,17 @@ Template Name: admin
     <?php get_header("admin"); ?>
     <div class="container nopadding admin-content">
       <div class="col-sm-6 nopadding">
+        <article class="frame info frameshadow">
+          <div class="title-wrap">
+            <i class="fa fa-weixin"></i>
+            <div class="title">
+              お知らせ
+            </div>
+          </div>
+          <div class="content">
+            <?php echo get('admininfo'); ?>
+          </div>
+        </article>
         <article class="frame live frameshadow">
           <a href="./live">
             <div class="title">
@@ -29,14 +40,7 @@ Template Name: admin
         <article class="frame clubroom frameshadow">
           <a href="./部室予約">
             <div class="title">
-              部室予約表
-            </div>
-          </a>
-        </article>
-        <article class="frame howto frameshadow">
-          <a href="./運用資料">
-            <div class="title">
-              HP運用資料
+              部室予約
             </div>
           </a>
         </article>
@@ -63,11 +67,22 @@ Template Name: admin
         </article>
         <article class="frame settings frameshadow">
           <div class="title-wrap">
-            <a href="<?php echo wp_login_url()?>">
+            <a href="<?php echo get_admin_url()?>">
               <i class="fa fa-gear">
               </i>
               <div class="title">
                 各種設定
+              </div>
+            </a>
+          </div>
+        </article>
+        <article class="frame howto frameshadow">
+          <div class="title-wrap">
+            <a href="./運用資料">
+              <i class="fa fa-file-text">
+              </i>
+              <div class="title">
+                HP運用資料
               </div>
             </a>
           </div>
