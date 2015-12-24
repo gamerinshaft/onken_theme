@@ -87,17 +87,17 @@ Template Name: admin
             </a>
           </div>
         </article>
-        <!-- <article class="frame room frameshadow">
-          <i class="fa fa-volume-up">
-          </i>
-          <div class="title">
-            諸連絡
+        <article class="frame namebooks frameshadow">
+          <div class="title-wrap">
+            <a href="./namebooks">
+              <i class="fa fa-file-text">
+              </i>
+              <div class="title">
+                音研部員名簿
+              </div>
+            </a>
           </div>
-          <ul class="schedule">
-            <li>これはテストです。</li>
-            <li>こんなのがあったらいいですね</li>
-          </ul>
-        </article> -->
+        </article>
       </div>
     </div>
   </body>
