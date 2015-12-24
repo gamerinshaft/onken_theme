@@ -13,7 +13,6 @@ Template Name: namebooks
 <html lang="ja">
   <head>
     <?php get_header("meta"); ?>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/namebooks.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/admin.css">
   </head>
   <body>

@@ -42,6 +42,9 @@ body,html{
 .active{
   display: block !important;
 }
+p{
+  display: none;
+}
 .panel{
   background-size: cover;
   background-position: center;

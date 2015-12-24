@@ -1,6 +1,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>部員名簿 | 音楽研究会</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -16,7 +17,16 @@
 
 <script>
 $(function(){
-  $(window).on("ready resize", function(){
+  if($(window).height() > $(window).width()){
+    $(".panel").css({
+      "background-size" : "cover"
+    });
+  }else{
+    $(".panel").css({
+      "background-size" : "contain"
+    })
+  }
+  $(window).on("resize", function(){
     if($(window).height() > $(window).width()){
       $(".panel").css({
         "background-size" : "cover"
